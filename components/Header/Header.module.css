@@ -5,8 +5,6 @@
     justify-content: space-around;
     padding: 20px 0;
     color: white;
-    position: fixed;
-    width: 100%;
     z-index: 1000;
 }
 
@@ -51,4 +49,47 @@
 
 .header nav .active {
     color: rgb(192, 192, 192)
+}
+
+.sub_header {
+    background: #1C1C1C;
+    width: 100%;
+    height: 80vh;
+    overflow-x: hidden;
+}
+
+.points {
+    background: url("../../public/images/points.svg");
+    background-position: center;
+    background-size: cover;
+    filter: brightness(0.35);
+    width: 110%;
+    height: 80vh;
+    z-index: 100;
+    position: absolute;
+}
+
+.rounds {
+    background: url("../../public/images/rounds.svg");
+    background-position: center;
+    background-size: cover;
+    filter: brightness(0.35);
+    width: 120%;
+    height: 100%;
+    z-index: 100;
+    position: relative;
+    left: -10%;
+}
+
+.v {
+    width: 100%;
+    height: 50vh;
+    z-index: 101;
+    position: relative;
+    transform: translateY(-130%);
+    margin-top: 110px;
+}
+
+.vcolor {
+    fill: white;
 }
