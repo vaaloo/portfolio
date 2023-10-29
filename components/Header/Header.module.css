@@ -1,0 +1,54 @@
+.header {
+    background: #101010;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0;
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo_container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.logo_container h1 {
+    font-size: 1.7rem;
+}
+
+.logo {
+    background: url("../../public/favicon.ico");
+    background-size: contain;
+    width: 60px;
+    height: 60px;
+    border: 1px solid white;
+    border-radius: 100%;
+    margin-right: 15px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.logo:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+.header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 20px;
+    transition: color 0.2s ease-in-out;
+}
+
+.header nav a:hover {
+    color: rgb(192, 192, 192);
+}
+
+.header nav .active {
+    color: rgb(192, 192, 192)
+}
