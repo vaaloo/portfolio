@@ -1,0 +1,139 @@
+.about_me_title {
+    position: relative;
+    width: 150px;
+    margin: 20px auto;
+    color: #101010;
+    font-weight: 700;
+}
+
+.about_me_title::after {
+    content: "";
+    width: 50%;
+    position: absolute;
+    height: 5px;
+    background: rgb(41, 41, 41);
+    border-radius: 10px;
+    bottom: -7px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.content_container {
+    padding: 0 150px;
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-flow: row wrap;
+}
+
+.desc_container {
+    width: 50%;
+}
+
+.desc_container h2 {
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.desc_container h2::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    height: 2px;
+    background: rgb(41, 41, 41);
+    border-radius: 10px;
+    bottom: -7px;
+    left: 0;
+}
+
+.desc_container p a {
+    color: rgb(119, 119, 119);
+    font-weight: 700;
+}
+
+.skills_container {
+    display: flex;
+    flex-flow: row wrap;
+    flex-grow: 0;
+}
+
+.skills {
+    flex: 1 0 calc(100% / 4);
+    flex-basis: 25%;
+    height: 100px;
+    margin: 0 10px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    padding: 5px;
+}
+
+.skills:nth-child(1) .skills_img {
+    background: url("../public/images/html.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+}
+
+.skills:nth-child(2) .skills_img {
+    background: url("../public/images/css.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+}
+
+.skills:nth-child(3) .skills_img {
+    background: url("../public/images/js.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+}
+
+.skills:nth-child(4) .skills_img {
+    background: url("../public/images/nodejs.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 45px;
+    height: 50px;
+}
+
+.skills:nth-child(5) .skills_img {
+    background: url("../public/images/nextjs.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+}
+
+.skills:nth-child(6) .skills_img {
+    background: url("../public/images/cpp.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+}
+
+.skills_all_container h2 {
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.skills_all_container h2::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    height: 2px;
+    background: rgb(41, 41, 41);
+    border-radius: 10px;
+    bottom: -7px;
+    left: 0;
+}

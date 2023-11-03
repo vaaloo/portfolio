@@ -1,0 +1,39 @@
+.footer_container {
+    background: #101010;
+    color: white;
+    padding: 30px;
+}
+
+.footer_content {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.footer_container a img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.copyright {
+    text-align: center;
+    position: relative;
+}
+
+.copyright::before {
+    content: "";
+    width: 80%;
+    position: absolute;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.336);
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.copyright a {
+    color: white;
+    font-weight: 700;
+}
