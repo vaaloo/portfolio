@@ -5,7 +5,7 @@ export default function Projects() {
     return (
         <>
             <Head>
-                <title>Valoo - Projects</title>
+                <title>Valoo - Contact</title>
             </Head>
             <Header></Header>
         </>
