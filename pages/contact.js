@@ -2,20 +2,61 @@ import Head from "next/head";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import styles from "../styles/Contact.module.css"
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import axios from 'axios';
 
 export default function Contact() {
+    useEffect(() => {
+        // Chargez le CSS et le script iziToast depuis le CDN
+        const iziToastCSS = document.createElement('link');
+        iziToastCSS.rel = 'stylesheet';
+        iziToastCSS.href = 'https://cdn.jsdelivr.net/npm/izitoast/dist/css/iziToast.min.css';
+        document.head.appendChild(iziToastCSS);
+
+        const iziToastScript = document.createElement('script');
+        iziToastScript.src = 'https://cdn.jsdelivr.net/npm/izitoast';
+        iziToastScript.async = true;
+        document.body.appendChild(iziToastScript);
+    }, []);
+    const sucessIziToast = () => {
+        iziToast.success({
+            title: 'Success',
+            message: 'Email sent successfully',
+            position: 'topRight',
+        });
+    };
+
+    const errorIziToast = () => {
+        iziToast.error({
+            title: 'Error',
+            message: 'Error sending the email',
+            position: 'topRight',
+        });
+    }
+
+    const warningIziToast = () => {
+        iziToast.warning({
+            title: 'Warning',
+            message: 'Please fill in all fields',
+            position: 'topRight',
+        });
+    }
+
     const [name, setName] = useState('');
-    const [subject, setSubject] = useState('');
+    const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
 
     const handleSubmit = async (e) => {
         e.preventDefault();
 
+        if (!name || !email || !message) {
+            warningIziToast();
+            return;
+        }
+
         const formData = {
             name,
-            subject,
+            email,
             message,
         };
 
@@ -23,10 +64,13 @@ export default function Contact() {
             const response = await axios.post('/api/send-email', formData);
 
             console.log('E-mail sent successfully:', response.data);
-            // Ajoutez ici une logique pour afficher un message de confirmation à l'utilisateur
+            sucessIziToast();
+            setName('');
+            setEmail('');
+            setMessage('');
         } catch (error) {
             console.error('Error sending the email:', error);
-            // Gérez les erreurs et affichez un message d'erreur à l'utilisateur si nécessaire
+            errorIziToast()
         }
     };
 
@@ -37,27 +81,29 @@ export default function Contact() {
                 name="Portfolio - Valoo"
                 content="Web Developer - Valentin Gorgodian" />
             <title>
-                Valoo - Home
+                Valoo - Contact
             </title>
         </Head>
         <Header></Header>
-        <div>
-            <form onSubmit={handleSubmit}>
-                <label>
-                    Name:
-                    <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
-                </label>
-                <label>
-                    Sujet:
-                    <input type="text" value={subject} onChange={(e) => setSubject(e.target.value)} />
-                </label>
-                <label>
-                    Message:
-                    <textarea value={message} onChange={(e) => setMessage(e.target.value)} />
-                </label>
-                <button type="submit">Envoyer</button>
-            </form>
-        </div>
+            <h1 className={styles.about_me_title}>CONTACT ME</h1>
+            <p className={styles.about_me_text}>If you want to contact me, you can fill out the form below.</p>
+            <div className={styles.contact_container}>
+                <form className={styles.form_container} onSubmit={handleSubmit}>
+                    <label>
+                        Name
+                        <input type="text" placeholder="Enter your name" value={name} onChange={(e) => setName(e.target.value)} />
+                    </label>
+                    <label>
+                        Email
+                        <input type="email" placeholder="Enter your email" value={email} onChange={(e) => setEmail(e.target.value)} />
+                    </label>
+                    <label>
+                        Message
+                        <textarea value={message} placeholder="Enter your message" rows="10" cols="50" onChange={(e) => setMessage(e.target.value)} />
+                    </label>
+                    <button type="submit">SUBMIT</button>
+                </form>
+            </div>
         <Footer></Footer>
         </>
     );

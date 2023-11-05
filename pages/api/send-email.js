@@ -1,10 +1,8 @@
-// pages/api/send-email.js
-
 import axios from 'axios';
 
 export default async (req, res) => {
     if (req.method === 'POST') {
-        const { name, subject, message } = req.body;
+        const { name, email, message } = req.body;
 
         const mailjetApiKeyPublic = process.env.MAILJET_PUBLIC;
         const mailjetApiKeyPrivate = process.env.MAILJET_PRIVATE;
@@ -21,7 +19,7 @@ export default async (req, res) => {
                             Email: process.env.MYMAIL,
                         },
                     ],
-                    Subject: subject,
+                    Subject: email,
                     TextPart: message,
                 },
             ],
