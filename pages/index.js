@@ -20,11 +20,11 @@ export default function Home() {
         <div className={styles.content_container}>
             <div className={styles.desc_container}>
                 <h2>Who am I ?</h2>
-                <p>I'm a young <b>fullstack web developer</b>, still a student. I've had several <b>projects</b> in my development career, which you can find on my <Link href="/projects">projects</Link> page.
+                <p>I&apos;m a young <b>fullstack web developer</b>, still a student. I&apos;ve had several <b>projects</b> in my development career, which you can find on my <Link href="/projects">projects</Link> page.
                     I started coding with <b>NodeJS</b>, then gradually learned <b>HTML and CSS. </b>
-                    More recently, I've started using <b>NextJS</b> (this site being made with this).
-                    I was able to learn <b>C++</b> during my studies too, although it's not much use to me for the web! 
-                    If you'd like to <b>contact me</b>, please go to my <Link href="/contact">contact</Link> page !
+                    More recently, I&apos;ve started using <b>NextJS</b> (this site being made with this).
+                    I was able to learn <b>C++</b> during my studies too, although it&apos;s not much use to me for the web!
+                    If you&apos;d like to <b>contact me</b>, please go to my <Link href="/contact">contact</Link> page !
                 </p>
             </div>
             <div className={styles.skills_all_container}>

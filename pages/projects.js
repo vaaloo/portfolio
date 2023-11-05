@@ -15,8 +15,8 @@ export default function Projects() {
                 <div className={styles.projects}>
                     <div className={styles.projects_img}></div>
                     <div className={styles.projects_text}>
-                        <h2>L'Atelier Burger</h2>
-                        <p>L'Atelier Burger is a restaurant in the south of France. I was in charge of creating the entire website (backend and frontend).</p>
+                        <h2>L&apos;Atelier Burger</h2>
+                        <p>L&apos;Atelier Burger is a restaurant in the south of France. I was in charge of creating the entire website (backend and frontend).</p>
                     </div>
                 </div>
                 <div className={styles.projects}>
