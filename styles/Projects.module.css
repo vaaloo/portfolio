@@ -87,3 +87,29 @@
     bottom: -7px;
     left: 0;
 }
+
+@media only screen and (max-width: 600px) {
+    .projects_container {
+        height: 100%;
+    }
+
+    .projects:nth-child(1) .projects_img {
+        width: 300px;
+        height: 170px;
+        background-size: cover;
+    }
+    .projects:nth-child(2) .projects_img {
+        width: 300px;
+        height: 170px;
+        background-size: cover;
+    }
+    .projects:nth-child(3) .projects_img {
+        width: 300px;
+        height: 170px;
+        background-size: cover;
+    }
+
+    .projects_text {
+        width: 300px;
+    }
+}

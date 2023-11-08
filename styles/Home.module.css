@@ -137,3 +137,12 @@
     bottom: -7px;
     left: 0;
 }
+
+@media only screen and (max-width: 600px) {
+    .content_container {
+        padding: 0 50px;
+    }
+    .desc_container {
+        width: 100%;
+    }
+}
