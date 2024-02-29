@@ -20,7 +20,7 @@ export default function Footer() {
                         </div>
                     </div>
                 </div>
-                <p className={styles.copyright}>Made by <Link href="/">Valoo</Link>. © Copyright 2023</p>
+                <p className={styles.copyright}>Made by <Link href="/">Valoo</Link>. © Copyright 2024</p>
             </div>
         </>
     )
