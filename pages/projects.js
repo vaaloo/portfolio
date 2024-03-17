@@ -39,7 +39,7 @@ export default function Projects() {
                     <div className={styles.projects_img}></div>
                     <div className={styles.projects_text}>
                         <h2>Papaya</h2>
-                        <p><a href={"https://vaaloo.github.io/papaya"} target={"_blank"}>Papaya</a> is a project I had to do for university. The brief was to create a website on the theme we wanted and only with HTML, CSS and JS. So, we made a parody of Apple. This <a href={"https://vaaloo.github.io/papaya"} target={"_blank"}>site</a> is totally opensource (check my <a href={"https://github.com/vaaloo"} target={"_blank"}>Github</a>).</p>
+                        <p><a href={"https://vaaloo.github.io/papaya"} target={"_blank"}>Papaya</a> is a project I had to do for university. The brief was to create a website on the theme we wanted and only with HTML, CSS and JS. So, I made a parody of Apple. This <a href={"https://vaaloo.github.io/papaya"} target={"_blank"}>site</a> is totally opensource (check my <a href={"https://github.com/vaaloo"} target={"_blank"}>Github</a>).</p>
                     </div>
                 </div>
             </div>
