@@ -21,7 +21,7 @@
 .projects_container {
     display: flex;
     width: 100%;
-    height: 1000px;
+    height: 1333px;
     align-content: center;
     justify-content: space-around;
     flex-direction: column;
@@ -34,6 +34,11 @@
     align-items: center;
     justify-content: space-around;
     flex-flow: row wrap;
+}
+
+.projects p a {
+    color: rgb(119, 119, 119);
+    font-weight: 700;
 }
 
 .projects:nth-child(1) .projects_img {
@@ -66,6 +71,16 @@
     box-shadow: 0px 5px 16px 1px rgba(0,0,0,0.74);
 }
 
+.projects:nth-child(4) .projects_img {
+    background: url("/images/papaya.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 445px;
+    height: 250px;
+    box-shadow: 0px 5px 16px 1px rgba(0,0,0,0.74);
+}
+
 .projects_text {
     width: 350px;
     height: auto;
@@ -88,7 +103,7 @@
     left: 0;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     .projects_container {
         height: 100%;
     }
@@ -98,12 +113,20 @@
         height: 170px;
         background-size: cover;
     }
+
     .projects:nth-child(2) .projects_img {
         width: 300px;
         height: 170px;
         background-size: cover;
     }
+
     .projects:nth-child(3) .projects_img {
+        width: 300px;
+        height: 170px;
+        background-size: cover;
+    }
+
+    .projects:nth-child(4) .projects_img {
         width: 300px;
         height: 170px;
         background-size: cover;
