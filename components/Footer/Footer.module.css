@@ -1,12 +1,12 @@
 .footer_container {
     background: #101010;
     color: white;
-    padding: 30px;
+    padding: 30px 20%;
 }
 
 .footer_content {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-flow: row wrap;
     align-items: center;
 }
@@ -24,7 +24,7 @@
 
 .copyright::before {
     content: "";
-    width: 80%;
+    width: 100%;
     position: absolute;
     height: 1px;
     background: rgba(255, 255, 255, 0.336);
