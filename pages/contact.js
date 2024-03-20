@@ -104,6 +104,7 @@ export default function Contact() {
                     <button type="submit">SUBMIT</button>
                 </form>
             </div>
+            <p className={styles.about_me_text}>You can also contact me by email at <a href="mailto:contact@vaaloo.fr">contact@vaaloo.fr</a></p>
         <Footer></Footer>
         </>
     );

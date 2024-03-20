@@ -118,3 +118,8 @@
         margin: 30px auto;
     }
 }
+
+.about_me_text a {
+    color: rgb(119, 119, 119);
+    font-weight: 700;
+}
