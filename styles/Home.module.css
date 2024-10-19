@@ -48,6 +48,10 @@
     left: 0;
 }
 
+.desc_container p {
+    text-align: justify;
+}
+
 .desc_container p a {
     color: rgb(119, 119, 119);
     font-weight: 700;
@@ -98,7 +102,7 @@
 }
 
 .skills:nth-child(4) .skills_img {
-    background: url("../public/images/nodejs.png");
+    background: url("../public/images/java.png");
     background-size: contain;
     background-repeat: no-repeat;
     width: 45px;
@@ -114,7 +118,7 @@
 }
 
 .skills:nth-child(6) .skills_img {
-    background: url("../public/images/cpp.png");
+    background: url("../public/images/sql-server.png");
     background-size: contain;
     background-repeat: no-repeat;
     width: 50px;

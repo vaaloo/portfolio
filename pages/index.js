@@ -44,7 +44,7 @@ export default function Home() {
                     </div>
                     <div className={styles.skills}>
                         <div className={styles.skills_img}></div>
-                        <p>NodeJS</p>
+                        <p>Java</p>
                     </div>
                     <div className={styles.skills}>
                         <div className={styles.skills_img}></div>
@@ -52,7 +52,7 @@ export default function Home() {
                     </div>
                     <div className={styles.skills}>
                         <div className={styles.skills_img}></div>
-                        <p>C++</p>
+                        <p>SQL</p>
                     </div>
                 </div>
             </div>
