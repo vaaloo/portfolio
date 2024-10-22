@@ -142,6 +142,10 @@
     left: 0;
 }
 
+.skills_container p {
+    font-weight: 600;
+}
+
 @media only screen and (max-width: 600px) {
     .content_container {
         padding: 0 50px;
