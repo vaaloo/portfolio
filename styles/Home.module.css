@@ -65,11 +65,9 @@
 
 .skills {
     flex: 1 0 calc(100% / 4);
-    flex-basis: 25%;
     height: 100px;
-    margin: 0 10px;
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     position: relative;
@@ -119,6 +117,30 @@
 
 .skills:nth-child(6) .skills_img {
     background: url("../public/images/sql-server.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+}
+
+.skills:nth-child(7) .skills_img {
+    background: url("../public/images/react.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+}
+
+.skills:nth-child(8) .skills_img {
+    background: url("../public/images/figma.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+}
+
+.skills:nth-child(9) .skills_img {
+    background: url("../public/images/ts.png");
     background-size: contain;
     background-repeat: no-repeat;
     width: 50px;

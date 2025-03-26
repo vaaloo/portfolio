@@ -59,10 +59,22 @@ export default function Home() {
                         <div className={styles.skills_img}></div>
                         <p>SQL</p>
                     </div>
+                    <div className={styles.skills}>
+                        <div className={styles.skills_img}></div>
+                        <p>ReactJS</p>
+                    </div>
+                    <div className={styles.skills}>
+                        <div className={styles.skills_img}></div>
+                        <p>Figma</p>
+                    </div>
+                    <div className={styles.skills}>
+                        <div className={styles.skills_img}></div>
+                        <p>TypeScript</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <Footer></Footer>
+            <Footer></Footer>
         </>
     )
 }
